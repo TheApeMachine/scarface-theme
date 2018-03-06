@@ -1,11 +1,11 @@
 @import "syntax-variables";
 
 atom-text-editor {
-  background-color: @dark-purple;
+  background-color: @dark-background;
   color: @light-grey;
 
   .wrap-guide {
-    background-color: @light-purple;
+    background-color: @dark-background;
   }
 
   .indent-guide {
@@ -17,12 +17,12 @@ atom-text-editor {
   }
 
   .gutter {
-    background-color: @light-purple;
+    background-color: @dark-background;
     color: @light-yellow;
 
     .line-number {
       &.cursor-line {
-        background-color: @light-purple;
+        background-color: @dark-purple;
         color: @light-yellow;
       }
 
@@ -44,15 +44,15 @@ atom-text-editor {
 
   .cursor {
     border: 1px solid @light-pink;
-    background-color: @dark-pink;
+    background-color: @dark-pink-trans;
   }
 
   .cursor-line {
-    background: @light-purple;
+    background: @light-background;
   }
 
   .selection .region {
-    background-color: @light-purple;
+    background-color: @light-background;
   }
 }
 
@@ -63,10 +63,10 @@ atom-text-editor {
 }
 
 .syntax--keyword {
-  color: @light-pink;
+  color: @light-purple;
 
   &.syntax--control {
-    color: @dark-pink;
+    color: @dark-purple;
   }
 
   &.syntax--operator {
@@ -102,7 +102,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--symbol {
-    color: @dark-pink;
+    color: @dark-yellow;
   }
 }
 
@@ -172,6 +172,10 @@ atom-text-editor {
     }
   }
 
+  &.syntax--other.syntax--symbol {
+    color: @light-yellow;
+  }
+
   &.syntax--section.syntax--embedded {
     color: @dark-grey;
   }
@@ -184,10 +188,10 @@ atom-text-editor {
   }
 
   &.syntax--function  {
-    color: @light-pink;
+    color: @light-purple;
 
     &.syntax--any-method {
-      color: @light-pink;
+      color: @light-purple;
     }
   }
 }
@@ -250,7 +254,7 @@ atom-text-editor {
 }
 
 .syntax--none {
-  color: @light-purple;
+  color: @light-red;
 }
 
 .syntax--markup {
@@ -289,7 +293,7 @@ atom-text-editor {
   }
 
   &.syntax--raw.syntax--inline {
-    color: @light-purple;
+    color: @light-red;
   }
 }
 
